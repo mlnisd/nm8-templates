@@ -1,0 +1,81 @@
+#home-page{
+	background-image: url("images/heroImage.png");
+	background-size: cover; 
+}
+
+#home-page .inner-page{
+	height: 600px;
+	display: table;
+	margin: 0 auto;
+}
+
+#homeNavWrapper{
+	display: table-cell;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+#personalLogo img{
+	display: block;
+	margin: 0 auto;
+}
+
+.homeNav{
+	font-family: Arial, sans-serif;
+	font-size: 13px;
+	text-transform: uppercase;
+	border: 3px solid #fff;
+	padding: 10px 35px;
+}
+
+.homeNav a{
+	color: #fff;
+}
+
+.homeNav:hover{
+	background-color:rgba(255, 255, 255, 0.4);
+}
+
+.headshot{
+	float: left;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+
+.personalBio{
+	text-align: justify;
+	font-size: 13px;
+	font-family: 'lucida grande';
+}
+
+.item i{
+	width: 100px;
+	height: inherit;
+}
+
+.item img{
+	width: 75px;
+	height: inherit;
+}
+
+.portfolioPieceWrapper{
+	padding-bottom: 10px; 
+}
+
+.portfolioPieceTitle{
+	font-size: 28px;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 300;
+	color: #7e61c9;
+}
+
+.portfolioPieceDesc{
+	font-size: 16px;
+	font-family: 'Open Sans',sans-serif;
+	font-weight: 300;
+}
+
+.viewMore{
+	font-size: 16px;
+	color: #7e61c9;
+}
