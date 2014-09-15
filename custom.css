@@ -21,8 +21,9 @@
 }
 
 .homeNav{
-	font-family: Arial, sans-serif;
-	font-size: 13px;
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
 	text-transform: uppercase;
 	border: 3px solid #fff;
 	padding: 10px 35px;
@@ -36,16 +37,68 @@
 	background-color:rgba(255, 255, 255, 0.4);
 }
 
+#workFilter{
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.workFilterChoice:nth-child(n+2){
+	margin-top: 30px !important;
+}
+
+.workFilterChoice{
+	border: 1px solid #ccc;
+}
+
 .headshot{
+	margin: 0 auto;
+	display: block;
+	border: 3px solid #222222;
+	width: 195px;
+	height: 195px;
+	border: 2px solid #000;
+	border-radius: 100px;
+	margin-right: 24px;
 	float: left;
-	padding-right: 10px;
-	padding-bottom: 10px;
+}
+
+#helloMessage{
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #E2E2E2;
 }
 
 .personalBio{
-	text-align: justify;
-	font-size: 13px;
-	font-family: 'lucida grande';
+	text-align: left;
+	font-size: 14px;
+	font-family: "Bitter","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+#contactInfo{
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: #E2E2E2;
+	text-align: center;
+}
+
+#contactInfo span{
+	margin-left: 30px;
+}
+
+#contactSocial{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#contactSocial ul{
+	display: inline-block;
 }
 
 .item i{
@@ -56,6 +109,11 @@
 .item img{
 	width: 75px;
 	height: inherit;
+}
+
+.large{
+	font-size: 32px;
+	line-height: 32px;
 }
 
 .portfolioPieceWrapper{
@@ -78,4 +136,8 @@
 .viewMore{
 	font-size: 16px;
 	color: #7e61c9;
+}
+
+#footer{
+	color: #E2E2E2;
 }
