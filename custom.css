@@ -1,3 +1,7 @@
+a:hover, a:focus {
+color: #ffffff !important;
+}
+
 #home-page{
 	background-image: url("images/heroImage.png");
 	background-size: cover; 
@@ -50,6 +54,10 @@
 
 .workFilterChoice{
 	border: 1px solid #ccc;
+}
+
+.workFilterChoice a:hover{
+	color:#2ba6cb !important;
 }
 
 .headshot{
