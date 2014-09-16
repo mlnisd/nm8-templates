@@ -82,8 +82,8 @@ color: #ffffff !important;
 .personalBio{
 	text-align: left;
 	font-size: 14px;
-	font-family: "Bitter","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
+	font-family: "Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-weight: 400;
 	margin-top: 10px;
 }
 
@@ -124,26 +124,25 @@ color: #ffffff !important;
 	line-height: 32px;
 }
 
+.alignCenter{
+	display: block;
+	margin: 0 auto;
+}
+
 .portfolioPieceWrapper{
-	padding-bottom: 10px; 
+	padding-bottom: 80px; 
 }
 
 .portfolioPieceTitle{
 	font-size: 28px;
-	font-family: 'Open Sans',sans-serif;
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-weight: 300;
 	color: #7e61c9;
 }
 
 .portfolioPieceDesc{
 	font-size: 16px;
-	font-family: 'Open Sans',sans-serif;
-	font-weight: 300;
-}
-
-.viewMore{
-	font-size: 16px;
-	color: #7e61c9;
+	font-family: "Bitter",sans-serif;
 }
 
 #footer{
