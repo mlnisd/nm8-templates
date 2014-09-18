@@ -1,4 +1,7 @@
 $( document ).ready(function() {
+
+    $('#portfolioContainer').mixItUp();
+
     $('#about').click(function () {
         scrollToElement('#footer',1000, -125);
     });

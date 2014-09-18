@@ -48,6 +48,10 @@ color: #ffffff !important;
 	text-align: center;
 }
 
+#portfolioContainer .mix{
+	display: none;
+}
+
 .workFilterChoice:nth-child(n+2){
 	margin-top: 30px !important;
 }
@@ -63,10 +67,8 @@ color: #ffffff !important;
 .headshot{
 	margin: 0 auto;
 	display: block;
-	border: 3px solid #222222;
 	width: 195px;
 	height: 195px;
-	border: 2px solid #000;
 	border-radius: 100px;
 	margin-right: 24px;
 	float: left;

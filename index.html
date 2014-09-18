@@ -7,20 +7,23 @@
     <title>NM T8 Home Page</title>
   
     <meta name="description" content="Low Detailed NM Wireframe" />
-  
     <meta name="author" content="Created by Michael Nguyen" />
     <meta name="copyright" content="Copyright (c) Michael Nguyen 2014" />
+
+    <link rel="shortcut icon" type="image/gif" href="http://e08595.medialib.glogster.com/media/20/20c73be0524a63d32fcfe89b27bcbe9dbf6d2622537245f8a9d35316ee574102/nyan-cat-gif.gif"/>
 
     <link rel="stylesheet" href="foundation-5.4.0/css/foundation.css" />
     <link rel="stylesheet" type="text/css" href="custom.css">
     <link rel="stylesheet" type="text/css" href="foundation-icons/foundation-icons.css">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.css" />
+
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     
     <script type="text/javascript" src="foundation-5.4.0/js/vendor/modernizr.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 
   </head>
   <body>
@@ -54,7 +57,7 @@
                     </li>
                     <li>
                       <div class="homeNav">
-                        <a href="#">Contact</a>
+                        <a href="#">Resume</a>
                       </div>
                     </li>
                   </ul>  
@@ -62,28 +65,28 @@
             </div>
         </div>
     </div>
-    <div class="row" style="background-color:#ffffff;margin-top:10px">
+    <div class="row" style="background-color:#ffffff;margin-top:20px">
         <div id="content-page" class="small-12 medium-11 medium-centered large-10 large-centered columns">
             <div class="panel small-12 medium-3 large-2 columns">
               <ul id="workFilter" class="side-nav">
-                <li class="workFilterChoice"><a href="#">Illustration</a></li>
-                <li class="workFilterChoice"><a href="#">3D</a></li>
-                <li class="workFilterChoice"><a href="#">Animation</a></li>
-                <li class="workFilterChoice"><a href="#">HTML</a></li>
-                <li class="workFilterChoice"><a href="#">CSS</a></li>
+                <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
+                <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
+                <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
+                <li class="workFilterChoice filter" data-filter=".category-3"><a>Animation</a></li>
+                <li class="workFilterChoice filter" data-filter=".category-4"><a>Web</a></li>
               </ul>  
             </div>
             <div class="small-12 medium-9 large-10 columns" style="padding-right: 0px;">
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                  <li><img src="images/portfolio1.jpg"></li>
-                  <li><img src="images/portfolio2.jpg"></li>
-                  <li><img src="images/portfolio3.jpg"></li>
-                  <li><img src="images/portfolio4.jpg"></li>
-                  <li><img src="images/portfolio5.jpg"></li>
-                  <li><img src="images/portfolio6.jpg"></li>
-                  <li><img src="images/portfolio7.jpg"></li>
-                  <li><img src="images/portfolio8.jpg"></li>
-                  <li><img src="images/portfolio9.jpg"></li>
+                <ul id="portfolioContainer" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+                  <li class="mix category-1" data-myorder="1"><img src="images/portfolio1.jpg"></li>
+                  <li class="mix category-2" data-myorder="2"><img src="images/portfolio2.jpg"></li>
+                  <li class="mix category-3" data-myorder="3"><img src="images/portfolio3.jpg"></li>
+                  <li class="mix category-4" data-myorder="4"><img src="images/portfolio4.jpg"></li>
+                  <li class="mix category-4" data-myorder="5"><img src="images/portfolio5.jpg"></li>
+                  <li class="mix category-1" data-myorder="6"><img src="images/portfolio6.jpg"></li>
+                  <li class="mix category-2" data-myorder="7"><img src="images/portfolio7.jpg"></li>
+                  <li class="mix category-3" data-myorder="8"><img src="images/portfolio8.jpg"></li>
+                  <li class="mix category-4" data-myorder="9"><img src="images/portfolio9.jpg"></li>
                 </ul>
             </div>
         </div>
@@ -141,5 +144,7 @@
     </div>
   </div>
 </footer>
+  <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
