@@ -19,6 +19,7 @@
 
     <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Bitter:400,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
     
     <script type="text/javascript" src="foundation-5.4.0/js/vendor/modernizr.js"></script>
@@ -68,7 +69,7 @@
     <div class="row" style="background-color:#ffffff;margin-top:20px">
         <div id="content-page" class="small-12 medium-11 medium-centered large-10 large-centered columns">
             <div class="panel small-12 medium-3 large-2 columns">
-              <ul id="workFilter" class="side-nav">
+              <ul id="workFilter" class="side-nav"><span id="filterTitle">Filter</span>
                 <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
                 <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
                 <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
@@ -78,15 +79,114 @@
             </div>
             <div class="small-12 medium-9 large-10 columns" style="padding-right: 0px;">
                 <ul id="portfolioContainer" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                  <li class="mix category-1" data-myorder="1"><img src="images/portfolio1.jpg"></li>
-                  <li class="mix category-2" data-myorder="2"><img src="images/portfolio2.jpg"></li>
-                  <li class="mix category-3" data-myorder="3"><img src="images/portfolio3.jpg"></li>
-                  <li class="mix category-4" data-myorder="4"><img src="images/portfolio4.jpg"></li>
-                  <li class="mix category-4" data-myorder="5"><img src="images/portfolio5.jpg"></li>
-                  <li class="mix category-1" data-myorder="6"><img src="images/portfolio6.jpg"></li>
-                  <li class="mix category-2" data-myorder="7"><img src="images/portfolio7.jpg"></li>
-                  <li class="mix category-3" data-myorder="8"><img src="images/portfolio8.jpg"></li>
-                  <li class="mix category-4" data-myorder="9"><img src="images/portfolio9.jpg"></li>
+                  <li class="mix category-1" data-myorder="1">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio1.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project One</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Illustration</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-2" data-myorder="2">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio2.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Two</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">3D</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-3" data-myorder="3">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio3.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Three</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Animation</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-4" data-myorder="4">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio4.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Four</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Web</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-4" data-myorder="5">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio5.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Five</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Web</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-1" data-myorder="6">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio6.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Six</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Illustration</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-2" data-myorder="7">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio7.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Seven</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">3D</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-3" data-myorder="8">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio8.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Eight</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Animation</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="mix category-4" data-myorder="9">
+                    <div class="portfolioImg">
+                      <a href="#">
+                        <img src="images/portfolio9.jpg">
+                        <div class="overlay">
+                          <h4 class="portfolioTitle">Project Nine</h4>
+                          <div class="divider"></div>
+                          <h5 class="portfolioCategory">Web</h5> 
+                        </div>
+                      </a>
+                    </div>
+                  </li>
                 </ul>
             </div>
         </div>

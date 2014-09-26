@@ -41,10 +41,66 @@ color: #ffffff !important;
 	background-color:rgba(255, 255, 255, 0.4);
 }
 
+#filterTitle{
+	display: block;
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 14px;
+	font-style: italic;
+	color: #b1b1b1;
+	text-align: left;
+	border-bottom: 1px solid #b1b1b1;
+	margin-bottom: 30px; 
+}
+
 #workFilter{
 	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 14px;
 	font-weight: 400;
+	text-align: center;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	display: none;
+	padding: 25% 25%;
+}
+
+.divider{
+	width: 31px;
+	border-bottom: 1px solid #fff;
+	margin: 10px auto;
+}
+
+.portfolioContent{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.portfolioTitle{
+	display: block;
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 18px;
+	color: #fff;
+}
+
+.portfolioCategory{
+	display: block;
+	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-size: 14px;
+	color: #fff;
+}
+
+.portfolioImg{
+	display: table;
+	position: relative;
+}
+
+.portfolioImg:hover .overlay{
+	display: block;
 	text-align: center;
 }
 
@@ -53,11 +109,12 @@ color: #ffffff !important;
 }
 
 .workFilterChoice:nth-child(n+2){
-	margin-top: 30px !important;
+	/*margin-top: 30px !important;*/
 }
 
-.workFilterChoice{
-	border: 1px solid #ccc;
+.workFilterChoice a{
+	/*border: 1px solid #ccc;*/
+	color: #777777 !important;
 }
 
 .workFilterChoice a:hover{
@@ -84,7 +141,7 @@ color: #ffffff !important;
 .personalBio{
 	text-align: left;
 	font-size: 14px;
-	font-family: "Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	font-weight: 400;
 	margin-top: 10px;
 }
@@ -129,12 +186,21 @@ color: #ffffff !important;
 .alignCenter{
 	display: block;
 	margin: 0 auto;
+	width: 100%;
 }
 
 .portfolioPieceWrapper{
 	margin-top: 80px; 
 }
-
+/* Version 1 for aligning center of image
+.portfolioPieceDescWithImgWrapper:before{
+	content: '';
+	display: inline-block;
+	height: 370px;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+*/
 .portfolioPieceTitle{
 	font-size: 28px;
 	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -144,7 +210,42 @@ color: #ffffff !important;
 
 .portfolioPieceDesc{
 	font-size: 16px;
-	font-family: "Bitter",sans-serif;
+	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+.portfolioPieceDescWithImg{
+	/* Version 1 for aligning center of image
+	display: inline-block;
+	vertical-align: middle;
+	*/
+	font-size: 16px;
+	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+	/* Version 2 */
+	position: relative;
+  	top: 50%;
+	-webkit-transform: translateY(50%);
+  	-ms-transform: translateY(50%);
+  	transform: translateY(50%);
+}
+/* Medium Size Screens Only */
+@media only screen and (min-width: 40.63em) and (max-width: 64em) {
+  .portfolioPieceDescWithImg {
+  	position: initial;
+	top: initial;
+	-webkit-transform: translateY(initial);
+	-ms-transform: translateY(initial);
+	transform: initial;
+  }
+}
+/* Small Size Screens Only */
+@media only screen and (max-width: 40em) {
+  .portfolioPieceDescWithImg {
+    position: initial;
+	top: initial;
+	-webkit-transform: translateY(initial);
+	-ms-transform: translateY(initial);
+	transform: initial;
+  }
 }
 
 #footer{
