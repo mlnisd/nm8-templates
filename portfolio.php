@@ -1,10 +1,9 @@
-<?php 
+<?php
 	if(isset($_GET['id'])) {
 		$id = $_GET['id'];
 	}
 ?>
-
-<!doctype html>
+<!DOCTYPE html>
 <!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
 <html class="no-js" lang="en" data-useragent="Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0)">
   <head>
@@ -31,8 +30,8 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 
   </head>
-  <body onload="loadProject(<? echo $id; ?>)">
-    <div class="icon-bar five-up">
+  <body onload="addPortfolioContent(<? echo $id; ?>)">
+  	<div class="icon-bar five-up">
       <a class="item" href="index.html">
         <i class="fi-home"></i>
         <label id='iconNavlabel1'>HOME</label>
@@ -53,86 +52,16 @@
         <i class="fi-mail"></i>
         <label id='iconNavlabel4'>RESUME</label>
       </a>
-    </div>
-    <div class="row" style="background-color:#ffffff;margin-top:10px">
+      </div>
+      
+      <!-- Dynamic Content -->
+      <div class="row" style="background-color:#ffffff;margin-top:10px">
       <div id="content-page" class="small-12 columns" style="padding:0px !important">
-        <div class="portfolioPieceWrapper small-12 columns">
-          <div class="small-12 medium-10 large-8 large-centered columns">
-            <p class="portfolioPieceDesc" style="text-align: center;">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="portfolioPieceWrapper small-12 columns">
-          <div class="small-12 medium-12 large-10 large-centered columns" style="padding-bottom: 30px">
-            <img class="alignCenter" src="images/heroImage2.png">
-          </div>
-          <div class="small-12 medium-6 large-5 large-offset-1 columns">
-            <p class="portfolioPieceDesc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-          <div class="small-12 medium-6 large-5 end columns">
-            <p class="portfolioPieceDesc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="portfolioPieceWrapper small-12 columns">
-          <div class="small-12 medium-6 large-5 large-offset-1 columns">
-            <img src="http://38.media.tumblr.com/b17db73cf114d2e77523226dea59a324/tumblr_nbk6bwaU3h1st5lhmo1_1280.jpg">
-          </div>
-          <div class="small-12 medium-6 large-5 end columns">
-            <img src="https://unsplash.imgix.net/45/PlEgx5PSoiiJOmnE2izQ_NYC%20skyline%20empire-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=0ac9d7e64b272680b86cd42add38ac67">
-          </div>
-        </div>
-        <div class="portfolioPieceWrapper small-12 columns">
-          <div class="small-12 medium-6 large-5 large-offset-1 columns">
-            <img src="http://38.media.tumblr.com/f1047529838236ec1af3055dac80c92c/tumblr_nbk7bzHUrh1st5lhmo1_1280.jpg">
-          </div>
-          <div class="portfolioPieceDescWithImgWrapper small-12 medium-6 large-5 end columns">
-            <p class="portfolioPieceDescWithImg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
-        <div class="portfolioPieceWrapper small-12 columns">
-          <div class="small-12 medium-6 large-5 large-push-5 large-offset-1 columns">
-            <img src="http://33.media.tumblr.com/913b9ca07de8a526d03555b4d693b7b5/tumblr_nb1uqtIxbr1st5lhmo1_1280.jpg">
-          </div>
-          <div class="portfolioPieceDescWithImgWrapper small-12 medium-6 large-5 large-pull-5 end columns">
-            <p class="portfolioPieceDescWithImg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-          </div>
-        </div>
+      	
       </div>
     </div>
+      <!-- End Dynamic Content -->
+  	
     <footer id="footer" class="row" style="background-color:#222222; margin-top: 80px;">
   <div id="footer_contents" class="large-12 columns">
     <div class="row">

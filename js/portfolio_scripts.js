@@ -19,7 +19,7 @@ function loadIndexContent() {
 		
 		// Create link
 		var dynamic_link = document.createElement('a');
-		dynamic_link.setAttribute('href', 'portfolio.php');
+		dynamic_link.setAttribute('href', 'portfolio.php?id=' + i);
 		
 		// Create img
 		var dynamic_icon = document.createElement('img');
@@ -69,6 +69,154 @@ function loadIndexContent() {
 
 // Function that clears and gets content for portfolio page
 function addPortfolioContent(id) {
-	console.log('here');
-	console.log(id);
+	for (var i = 0; i < project[id].maxLength; i++) {
+		// Variables
+		var divEle = document.createElement('div');
+		divEle.setAttribute('class', 'portfolioPieceWrapper small-12 columns');
+		
+		// If it is the first index create the first text and the first image
+		if(i == 0) {
+			// Create div
+			var pDiv = document.createElement('div');
+			pDiv.setAttribute('class', 'small-12 medium-10 large-8 large-centered columns');
+			
+			// Create p
+			var pEle = document.createElement('p');
+			var pTextNode = document.createTextNode(project[id].portfolioPageDescriptions[i]);
+			pEle.setAttribute('class', 'portfolioPieceDesc');
+			pEle.style.textAlign = 'center';
+			pEle.appendChild(pTextNode);
+			
+			// Append
+			pDiv.appendChild(pEle);
+			divEle.appendChild(pDiv);
+		}
+		
+		// If it is the second and the third text add them together
+		else if(i == 1) {
+			// First image in first div
+			var imgDiv = document.createElement('div');
+			imgDiv.setAttribute('class', 'small-12 medium-12 large-10 large-centered columns');
+			imgDiv.style.paddingBottom = '30px';
+			
+			var imgEle = document.createElement('img');
+			imgEle.setAttribute('class', 'alignCenter');
+			imgEle.src = project[id].portfolioPageImages[i-1];
+			imgEle.alt = project[id].portfolioPageAlts[i-1];
+			
+			imgDiv.appendChild(imgEle);
+			divEle.appendChild(imgDiv);
+			
+			// Second text in second div
+			leftDiv = document.createElement('div');
+			leftDiv.setAttribute('class', 'small-12 medium-6 large-5 large-offset-1 columns');
+			
+			var leftP = document.createElement('p');
+			var leftTextNode = document.createTextNode(project[id].portfolioPageDescriptions[i]);
+			leftP.setAttribute('class', 'portfolioPieceDesc');
+			leftP.appendChild(leftTextNode);
+			
+			leftDiv.appendChild(leftP);
+			divEle.appendChild(leftDiv);
+			
+			// Third text in third div
+			rightDiv = document.createElement('div');
+			rightDiv.setAttribute('class', 'small-12 medium-6 large-5 end columns');
+			
+			var rightP = document.createElement('p');
+			var rightTextNode = document.createTextNode(project[id].portfolioPageDescriptions[i + 1]);
+			rightP.setAttribute('class', 'portfolioPieceDesc');
+			rightP.appendChild(rightTextNode);
+			
+			rightDiv.appendChild(rightP);
+			divEle.appendChild(rightDiv);
+			
+		}
+		
+		else if(i == 2) {
+			// Create first image
+			var leftDiv = document.createElement('div');
+			leftDiv.setAttribute('class', 'small-12 medium-6 large-5 large-offset-1 columns');
+			
+			var leftImg = document.createElement('img');
+			leftImg.src = project[id].portfolioPageImages[i - 1];
+			leftImg.alt = project[id].portfolioPageAlts[i - 1];
+			
+			leftDiv.appendChild(leftImg);
+			divEle.appendChild(leftDiv);
+			
+			// Create second image
+			var rightDiv = document.createElement('div');
+			rightDiv.setAttribute('class', 'small-12 medium-6 large-5 end columns');
+			
+			var rightImg = document.createElement('img');
+			rightImg.src = project[id].portfolioPageImages[i];
+			rightImg.alt = project[id].portfolioPageAlts[i];
+			
+			rightDiv.appendChild(rightImg);
+			divEle.appendChild(rightDiv);
+			
+		}
+		
+		// If it is 4th, 6th, 8th, etc. do image text
+		else if(i > 2 && (i % 2) == 1) {
+			// left image
+			var leftImgDiv = document.createElement('div');
+			leftImgDiv.setAttribute('class', 'small-12 medium-6 large-5 large-offset-1 columns');
+			
+			var leftOddImg = document.createElement('img');
+			leftOddImg.src = project[id].portfolioPageImages[i];
+			leftOddImg.alt = project[id].portfolioPageAlts[i];
+			
+			leftImgDiv.appendChild(leftOddImg);
+			divEle.appendChild(leftImgDiv);
+			
+			// right text
+			var rightTextDiv = document.createElement('div');
+			rightTextDiv.setAttribute('class', 'portfolioPieceDescWithImgWrapper small-12 medium-6 large-5 end columns');
+			
+			var rightOddP = document.createElement('p');
+			var rightOddTextNode = document.createTextNode(project[id].portfolioPageDescriptions[i]);
+			rightOddP.setAttribute('class', 'portfolioPieceDescWithImg');
+			rightOddP.appendChild(rightOddTextNode);
+			
+			rightTextDiv.appendChild(rightOddP);
+			divEle.appendChild(rightTextDiv);
+			
+		}
+		
+		// If it is 5th, 7th, 9th, etc do text image
+		else if(i > 2 && (i % 2) == 0) {
+			// left text
+			var leftTextDiv = document.createElement('div');
+			leftTextDiv.setAttribute('class', 'small-12 medium-6 large-5 large-offset-1 columns');
+			
+			var LeftEvenP = document.createElement('p');
+			var LeftEvenTextNode = document.createTextNode(project[id].portfolioPageDescriptions[i]);
+			LeftEvenP.setAttribute('class', 'portfolioPieceDescWithImg');
+			LeftEvenP.appendChild(LeftEvenTextNode);
+			
+			leftTextDiv.appendChild(LeftEvenP);
+			divEle.appendChild(leftTextDiv);
+			
+			// right image
+			var rightImgDiv = document.createElement('div');
+			rightImgDiv.setAttribute('class', 'portfolioPieceDescWithImgWrapper small-12 medium-6 large-5 end columns');
+			
+			var rightEvenImg = document.createElement('img');
+			rightEvenImg.src = project[id].portfolioPageImages[i];
+			rightEvenImg.alt = project[id].portfolioPageAlts[i];
+			
+			
+			rightImgDiv.appendChild(rightEvenImg);
+			divEle.appendChild(rightImgDiv);
+		}
+		document.getElementById('content-page').appendChild(divEle);
+	}
 }
+
+
+
+
+
+
