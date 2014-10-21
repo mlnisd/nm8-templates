@@ -31,7 +31,27 @@
 
   </head>
   <body onload="addPortfolioContent(<? echo $id; ?>)">
-  	<div class="icon-bar five-up">
+    <div class="off-canvas-wrap" data-offcanvas>
+    <div class="inner-wrap">
+      <nav class="tab-bar hide-for-large-up">
+        <section class="left-small">
+          <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+        </section>
+        <section class="middle tab-bar-section">
+          <h1 class="title">Portfolio</h1>
+        </section>
+      </nav>  
+      <aside class="left-off-canvas-menu">
+        <ul class="off-canvas-list">
+          <li><label>Navigation</label></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a id="about" href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Resume</a></li>
+        </ul>
+      </aside>
+      <!-- START CONTENT --> 
+  	<div class="show-for-large-up icon-bar five-up">
       <a class="item" href="index.html">
         <i class="fi-home"></i>
         <label id='iconNavlabel1'>HOME</label>
@@ -115,6 +135,14 @@
     </div>
   </div>
 </footer>
-	<script type="text/javascript" src="js/portfolio_scripts.js"></script>
+<!-- END CONTENT --> 
+  <a class="exit-off-canvas"></a>
+  </div>
+</div>
+  <script src="http://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+  <script src="foundation-5.4.0/js/foundation/foundation.js"></script>
+  <script src="foundation-5.4.0/js/foundation/foundation.offcanvas.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+  <script type="text/javascript" src="js/portfolio_scripts.js"></script>
   </body>
 </html>
