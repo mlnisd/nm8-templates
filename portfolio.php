@@ -82,51 +82,18 @@
     <div class="row" style="background-color:#ffffff;margin-top:10px">
       <div id="content-page" class="small-12 columns" style="padding:0px !important">
           <!-- Portfolio Content will dynamically load content here from portfolioProjectsJSON.js -->
-      	<div class="otherProjects small-12 columns">
-            <div class="small-12 medium-12 large-10 large-centered columns">
-                <hr/>
-                <h1 class="sectionTitleBlue">Related Projects</h1>
-                <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                    <li>
-                        <div class="portfolioImg">
-                            <a href="portfolio.php?id=0">
-                                <img src="images/portfolio1.jpg" alt="This is image 1" id="0">
-                                <div class="overlay">
-                                    <h4 class="portfolioTitle">Project One</h4>
-                                    <div class="divider"></div>
-                                    <h5 class="portfolioCategory">Illustration</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolioImg">
-                            <a href="portfolio.php?id=1">
-                                <img src="images/portfolio1.jpg" alt="This is image 2" id="1">
-                                <div class="overlay">
-                                    <h4 class="portfolioTitle">Project Two</h4>
-                                    <div class="divider"></div>
-                                    <h5 class="portfolioCategory">Illustration</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="portfolioImg">
-                            <a href="portfolio.php?id=2">
-                                <img src="images/portfolio1.jpg" alt="This is image 3" id="2">
-                                <div class="overlay">
-                                    <h4 class="portfolioTitle">Project Three</h4>
-                                    <div class="divider"></div>
-                                    <h5 class="portfolioCategory">Illustration</h5>
-                                </div>
-                            </a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
       </div>
+    </div>
+    <div class="row" style="background-color:#ffffff;margin-top:10px">
+      <div class="otherProjects small-12 columns">
+          <div id="other-projects" class="small-12 medium-12 large-10 large-centered columns">
+              <hr/>
+              <h1 class="sectionTitleBlue">Related Projects</h1>
+              <ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
+                    
+              </ul>
+          </div>
+        </div>
     </div>
       <!-- End Dynamic Content -->
     <footer id="footer" class="row" style="background-color:#222222; margin-top: 80px;">
