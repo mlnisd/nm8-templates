@@ -91,11 +91,11 @@ color: #ffffff !important;
 	display: block;
 	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
 	font-size: 14px;
+	font-style: italic;
 	color: #fff;
 }
 
 .portfolioImg{
-	display: table;
 	position: relative;
 }
 
@@ -166,6 +166,14 @@ color: #ffffff !important;
 
 #contactSocial ul{
 	display: inline-block;
+}
+
+.icon-bar .item{
+	background: #333;
+}
+
+.icon-bar .item:hover{
+	background: #2ba6cb;
 }
 
 .item i{

@@ -1,5 +1,7 @@
 $( document ).ready(function() {
 
+    $(document).foundation({});
+
     $('#portfolioContainer').mixItUp({});
 
     $('#about').click(function () {

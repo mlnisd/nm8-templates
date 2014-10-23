@@ -6,6 +6,11 @@ var arrLength = portfolioProjects["projects"].length;
 
 // Creates the icons on the index page as list items with links and images
 function loadIndexContent() {
+	if (window.localStorage) {
+  		window.localStorage.setItem("sort", "All");
+  	}
+  	console.log(window.localStorage.getItem("sort"));
+	
 	for (var i = 0; i < arrLength; i++) {
 		// Create li
 		var dynamic_li = document.createElement('li');
@@ -19,7 +24,7 @@ function loadIndexContent() {
 		
 		// Create link
 		var dynamic_link = document.createElement('a');
-		dynamic_link.setAttribute('href', 'portfolio.php?id=' + i);
+		dynamic_link.setAttribute('href', 'portfolio.php?id=' + i + '&sort=' + window.localStorage.getItem("sort"));
 		
 		// Create img
 		var dynamic_icon = document.createElement('img');
@@ -64,7 +69,7 @@ function loadIndexContent() {
 		
 		// Appending to ul
 		document.getElementById('portfolioContainer').appendChild(dynamic_li);
-	}
+	}	
 }
 
 // Function that clears and gets content for portfolio page
@@ -213,6 +218,87 @@ function addPortfolioContent(id) {
 		}
 		document.getElementById('content-page').appendChild(divEle);
 	}
+	
+	loadRelatedProjects(id);
+}
+
+function loadRelatedProjects(id) {
+	// Checks for no sort being applied
+	var relatedArray = [];
+	if(window.localStorage.getItem("sort") == 'All') {
+		for(var i = 0; i < arrLength; i++) {
+			relatedArray.push(i);
+		}
+	}
+	else {
+		console.log('else');
+		for(var i = 0; i < arrLength; i++) {
+			if(window.localStorage.getItem("sort") == project[i].category) {
+				relatedArray.push(i);
+			}
+		}
+	}
+	for(var k = 0; k < relatedArray.length; k++) {
+		if(relatedArray[k] == id) {
+			relatedArray.splice(k, 1);
+		}
+	}
+	console.log(relatedArray);
+	
+	// Parse relatedArray and add them to the dom
+	for(var j = 0; j < relatedArray.length; j++) {
+		var liEle = document.createElement('li');
+		
+		var divEle = document.createElement('div');
+		divEle.setAttribute('class', 'portfolioImg');
+		
+		var aEle = document.createElement('a');
+		aEle.setAttribute('href', 'portfolio.php?id=' + relatedArray[j] + '&sort=' + window.localStorage.getItem("sort"));
+		
+		var imgEle = document.createElement('img');
+		imgEle.setAttribute('src', project[relatedArray[j]].portfolioIcon);
+		imgEle.setAttribute('alt', project[relatedArray[j]].portfolioAlt);
+		imgEle.setAttribute('id', relatedArray[j]);
+		
+		var overlayDivEle = document.createElement('div');
+		overlayDivEle.setAttribute('class', 'overlay');
+		
+		var h4Ele = document.createElement('h4');
+		h4Ele.setAttribute('class', 'portfolioTitle');
+		h4Text = document.createTextNode(project[relatedArray[j]].title);
+		h4Ele.appendChild(h4Text);
+		
+		var divDividerEle = document.createElement('div');
+		divDividerEle.setAttribute('class', 'divider');
+		
+		var h5Ele = document.createElement('h5');
+		h5Ele.setAttribute('class', 'portfolioCategory');
+		h5Text = document.createTextNode(project[relatedArray[j]].category);
+		h5Ele.appendChild(h5Text);
+		
+		// Append to dom
+		overlayDivEle.appendChild(h4Ele);
+		overlayDivEle.appendChild(divDividerEle);
+		overlayDivEle.appendChild(h5Ele);
+		
+		aEle.appendChild(imgEle);
+		aEle.appendChild(overlayDivEle);
+		
+		divEle.appendChild(aEle);
+		
+		liEle.appendChild(divEle);
+		
+		document.getElementById('other-projects').getElementsByTagName('ul')[0].appendChild(liEle);
+	}
+ }
+
+
+function updateSorter (which) {
+  // Set the value of the anchor tag to local storage
+  if (window.localStorage) {
+  	window.localStorage.setItem("sort", which.valueOf().text);
+  }
+  console.log(window.localStorage.getItem("sort"));
 }
 
 
