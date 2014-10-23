@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NM T8 Home Page</title>
   
-    <meta name="description" content="High Detailed NM Wireframe" />
-    <meta name="author" content="Created by Michael Nguyen" />
-    <meta name="copyright" content="Copyright (c) Michael Nguyen 2014" />
+    <meta name="description" content="New Media Team 8 Portfolio Template" />
+    <meta name="author" content="Created by Michael Nguyen, Mat Morse, Morgan Reed, JJ Watson, Michaela Butler, Raven Reynolds" />
+    <meta name="copyright" content="Copyright (c) New Media Team 8" />
 
     <link rel="shortcut icon" type="image/gif" href="http://e08595.medialib.glogster.com/media/20/20c73be0524a63d32fcfe89b27bcbe9dbf6d2622537245f8a9d35316ee574102/nyan-cat-gif.gif"/>
 
@@ -31,6 +31,7 @@
   <body onload="loadIndexContent();">
   <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
+        <!-- Nav bar for mobile/tablet -->
       <nav class="tab-bar hide-for-large-up">
         <section class="left-small">
           <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -43,16 +44,19 @@
         <ul class="off-canvas-list">
           <li><label>Navigation</label></li>
           <li><a href="index.html">Home</a></li>
-          <li><a id="about" href="#">About</a></li>
+          <li><a class="about" href="#">About</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Resume</a></li>
         </ul>
       </aside>  
-<!-- START CONTENT --> 
+<!-- START HOME PAGE SECTION --> 
     <div class="row" style="background-color:#dae0e5;">
         <div id="home-page" class="small-12 columns">
             <div class="inner-page">
                 <ul id="homeNavWrapper" class="inline-list">
+                    <!-- This is where you place your personal logo 
+                         This is also where Nav for large screens are
+                    -->
                   <li id="personalLogo" class="small-12 small-centered columns">
                     <!-- <img src="images/NMT8_Logo.png"> -->
                     <img src="http://e08595.medialib.glogster.com/media/20/20c73be0524a63d32fcfe89b27bcbe9dbf6d2622537245f8a9d35316ee574102/nyan-cat-gif.gif">
@@ -64,7 +68,7 @@
                   </li>
                   <li>
                     <div class="homeNav show-for-large-up">
-                      <a id="about" href="#">About</a>
+                      <a class="about" href="#">About</a>
                     </div>
                   </li>
                   <li>
@@ -81,37 +85,42 @@
               </div>
           </div>
       </div>
+<!-- END HOME PAGE SECTION --> 
+<!-- START CONTENT SECTION -->
     <div class="row" style="background-color:#ffffff;margin-top:20px">
         <div id="content-page" class="small-12 medium-11 medium-centered large-10 large-centered columns">
             <div class="panel small-12 medium-3 large-2 columns">
-              <div class="hide-for-medium-up">
-                <a href="#" class="button" data-dropdown="tinyDrop2">Filter</a>
-                <ul id="tinyDrop2" class="mega f-dropdown" data-dropdown-content="">
-                  <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-3"><a>Animation</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-4"><a>Web</a></li>
-                </ul>
-              </div>
-              <div class="show-for-medium-up">
-                <ul id="workFilter" class="side-nav"><span id="filterTitle">Filter</span>
-                  <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-3"><a>Animation</a></li>
-                  <li class="workFilterChoice filter" data-filter=".category-4"><a>Web</a></li>
-                </ul>
-            </div>
-                
+                <!-- Filter for mobile -->
+                <div class="hide-for-medium-up">
+                    <a href="#" class="button" data-dropdown="tinyDrop2">Filter</a>
+                    <ul id="tinyDrop2" class="mega f-dropdown" data-dropdown-content="">
+                      <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-3"><a>Animation</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-4"><a>Web</a></li>
+                    </ul>
+                </div>
+                <!-- Filter for tablet/large screens -->
+                <div class="show-for-medium-up">
+                    <ul id="workFilter" class="side-nav"><span id="filterTitle">Filter</span>
+                      <li class="workFilterChoice filter" data-filter="all"><a>All</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-1"><a>Illustration</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-2"><a>3D</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-3"><a>Animation</a></li>
+                      <li class="workFilterChoice filter" data-filter=".category-4"><a>Web</a></li>
+                    </ul>
+                </div>           
             </div>
             <div class="small-12 medium-9 large-10 columns" style="padding-right: 0px;">
                 <ul id="portfolioContainer" class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-                  
+                    <!-- Portfolio Content will dynamically load content here from portfolio_scripts.js -->
                 </ul>
             </div>
         </div>
     </div>
+<!-- END CONTENT SECTION -->        
+<!-- START FOOTER -->
 <footer id="footer" class="row" style="background-color:#222222;">
   <div id="footer_contents" class="large-12 columns">
     <div class="row">
@@ -129,7 +138,6 @@
         </li>
       </ul>
     </div>  
-  <!-- <hr style="border-color:black;"/> -->
   <div class="row">
     <div class="small-12 small-centered medium-8 medium-centered large-6 large-centered columns">
       <p id="contactInfo">
@@ -165,8 +173,8 @@
     </div>
   </div>
 </div>
-</footer>
-<!-- END CONTENT --> 
+</footer>        
+<!-- END FOOTER --> 
   <a class="exit-off-canvas"></a>
   </div>
 </div> 

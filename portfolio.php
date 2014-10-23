@@ -11,9 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NM T8 Portfolio Page</title>
   
-    <meta name="description" content="Low Detailed NM Wireframe" />
-    <meta name="author" content="Created by Michael Nguyen" />
-    <meta name="copyright" content="Copyright (c) Michael Nguyen 2014" />
+    <meta name="description" content="New Media Team 8 Portfolio Template" />
+    <meta name="author" content="Created by Michael Nguyen, Mat Morse, Morgan Reed, JJ Watson, Michaela Butler, Raven Reynolds" />
+    <meta name="copyright" content="Copyright (c) New Media Team 8" />
 
     <link rel="shortcut icon" type="image/gif" href="http://e08595.medialib.glogster.com/media/20/20c73be0524a63d32fcfe89b27bcbe9dbf6d2622537245f8a9d35316ee574102/nyan-cat-gif.gif"/>
 
@@ -33,6 +33,7 @@
   <body onload="addPortfolioContent(<? echo $id; ?>)">
     <div class="off-canvas-wrap" data-offcanvas>
     <div class="inner-wrap">
+        <!-- Nav bar for mobile/tablet -->
       <nav class="tab-bar hide-for-large-up">
         <section class="left-small">
           <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
@@ -45,18 +46,21 @@
         <ul class="off-canvas-list">
           <li><label>Navigation</label></li>
           <li><a href="index.html">Home</a></li>
-          <li><a id="about" href="#">About</a></li>
+          <li><a class="about" href="#">About</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">Resume</a></li>
         </ul>
       </aside>
-      <!-- START CONTENT --> 
+      <!-- START CONTENT -->
+    <!-- This is where you place your personal logo 
+         This is also where Nav for large screens are
+    -->    
   	<div class="show-for-large-up icon-bar five-up">
       <a class="item" href="index.html">
         <i class="fi-home"></i>
         <label id='iconNavlabel1'>HOME</label>
       </a>
-      <a class="item">
+      <a class="item about">
         <i class="fi-torso"></i>
         <label id='iconNavlabel2'>ABOUT</label>
       </a>
@@ -77,6 +81,7 @@
       <!-- Dynamic Content -->
     <div class="row" style="background-color:#ffffff;margin-top:10px">
       <div id="content-page" class="small-12 columns" style="padding:0px !important">
+          <!-- Portfolio Content will dynamically load content here from portfolioProjectsJSON.js -->
       	<div class="otherProjects small-12 columns">
             <div class="small-12 medium-12 large-10 large-centered columns">
                 <hr/>

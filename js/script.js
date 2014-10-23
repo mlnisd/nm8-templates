@@ -1,10 +1,9 @@
 $( document ).ready(function() {
-
     $(document).foundation({});
 
     $('#portfolioContainer').mixItUp({});
-
-    $('#about').click(function () {
+    
+    $('.about').click(function(){
         scrollToElement('#footer',1000, -125);
     });
 });
