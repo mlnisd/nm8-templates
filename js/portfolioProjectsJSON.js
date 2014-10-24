@@ -1,13 +1,14 @@
+// This is the file you can edit to add your own projects to you can have as many or as few projects as you want but the demonstrated format needs to stay the same
 var portfolioProjects = {
 	"projects" : [
-		{
-			"title"						: "Project One",
-			"portfolioIcon" 			: "images/portfolio1.jpg",
-			"portfolioAlt"				: "This is image 1",
-			"sortTag"					: "category-1",
-			"category"					: "Illustration",
-			"maxLength"					: 7,
-			"portfolioPageImages"		: [
+		{ // Each project should be wrapped in brackets
+			"title"						: "Project One", // This is the title of the project and will be displayed at the top of the project page and the icon
+			"portfolioIcon" 			: "images/portfolio1.jpg", // This is the image that will be used for the icon
+			"portfolioAlt"				: "This is image 1", // This is the alternate text that will appear if the icon can't or won't load this is required of all images
+			"sortTag"					: "category-1", // This is the tag that matches to a sort on the main page make sure it matches the category
+			"category"					: "Illustration", // This is the sort name that is displayed on the icon and should match the tag display name of the sortTag
+			"maxLength"					: 7, // maxLength is the length of the longest list of content, if you forget to change this and you add more content and images it won't be display
+			"portfolioPageImages"		: [ // This is a list of the images you want displayed on the content page, put the url in quotes and separate each with a comma
 				"images/heroImage2.png",
 				"http://38.media.tumblr.com/b17db73cf114d2e77523226dea59a324/tumblr_nbk6bwaU3h1st5lhmo1_1280.jpg",
 				"https://unsplash.imgix.net/45/PlEgx5PSoiiJOmnE2izQ_NYC%20skyline%20empire-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=0ac9d7e64b272680b86cd42add38ac67",
@@ -16,7 +17,7 @@ var portfolioProjects = {
 				"http://38.media.tumblr.com/f1047529838236ec1af3055dac80c92c/tumblr_nbk7bzHUrh1st5lhmo1_1280.jpg",
 				"http://33.media.tumblr.com/913b9ca07de8a526d03555b4d693b7b5/tumblr_nb1uqtIxbr1st5lhmo1_1280.jpg"
 			],
-			"portfolioPageAlts"			: [
+			"portfolioPageAlts"			: [ // This is the alt list for the images, these are required and each alt should match the image in the same place in the list
 				"This is image 1a",
 				"This is image 1b",
 				"This is image 1c",
@@ -25,7 +26,7 @@ var portfolioProjects = {
 				"This is image 1d",
 				"This is image 1e"
 			],
-			"portfolioPageDescriptions"	: [
+			"portfolioPageDescriptions"	: [ // This is the content which should be wrapped in quotes and separated by commas
 				"This is text 1a",
 				"This is text 1b",
 				"This is text 1c",
@@ -34,7 +35,7 @@ var portfolioProjects = {
 				"This is text 1d",
 				"This is text 1e"
 			]
-		},
+		}, // Each project should be separated by a comma
 		
 		{
 			"title"						: "Project Two",
