@@ -52,6 +52,31 @@ color: #ffffff !important;
 	margin-bottom: 30px; 
 }
 
+#mobileFiltering{
+    display: block;
+    text-align: center;
+}
+
+#mobileFilter{
+	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 18px;
+	font-style: italic;
+	color: #b1b1b1;
+	text-align: center;
+}
+
+#mobileFilter:hover{
+    color: #258faf !important;
+}
+
+#tinyDrop2 li{
+    font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+    background: #e0e0e0;
+}
+
 #workFilter{
 	font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 14px;
@@ -119,6 +144,13 @@ color: #ffffff !important;
 
 .workFilterChoice a:hover{
 	color:#2ba6cb !important;
+}
+
+.sectionTitleBlue{
+    display: block;
+    font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-size: 28px;
+    color: #5381ac;
 }
 
 .headshot{
