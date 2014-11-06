@@ -79,7 +79,7 @@
           <!-- Portfolio Content will dynamically load content here from portfolioProjectsJSON.js -->
       </div>
     </div>
-    <div class="row" style="background-color:#e9e9e9;margin-top:10px">
+    <div class="row" style="background-color:#e9e9e9;padding-top:10px">
       <div class="otherProjects small-12 columns">
           <div id="other-projects" class="small-12 medium-12 large-10 large-centered columns">
               <hr/>
@@ -91,7 +91,7 @@
         </div>
     </div>
       <!-- End Dynamic Content -->
-    <footer id="footer" class="row" style="background-color:#222222; margin-top: 80px;">
+    <footer id="footer" class="row" style="background-color:#222222;">
   <div id="footer_contents" class="large-12 columns">
     <div class="row">
       <ul id="footerSiteMap" class="small-centered medium-11 medium-centered large-10 columns small-block-grid-1 medium-block-grid-1 large-block-grid-1" style="margin-top:20px;">
