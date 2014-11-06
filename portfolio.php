@@ -57,11 +57,9 @@
     -->    
   	<div class="show-for-large-up icon-bar five-up">
       <a class="item" href="index.html">
-        <i class="fi-home"></i>
         <label id='iconNavlabel1'>HOME</label>
       </a>
       <a class="item about">
-        <i class="fi-torso"></i>
         <label id='iconNavlabel2'>ABOUT</label>
       </a>
       <a class="item" href="index.html">
@@ -69,11 +67,9 @@
         <img src="images/NMT8_Logo.png">
       </a>
       <a class="item">
-        <i class="fi-comments"></i>
         <label id='iconNavlabel3'>BLOG</label>
       </a>
       <a class="item">
-        <i class="fi-mail"></i>
         <label id='iconNavlabel4'>RESUME</label>
       </a>
       </div>

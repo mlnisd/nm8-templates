@@ -74,11 +74,25 @@ function loadIndexContent() {
 
 // Function that clears and gets content for portfolio page
 function addPortfolioContent(id) {
+	// Create Header Div
+	var headerDiv = document.createElement('div');
+	headerDiv.setAttribute('class', 'small-12 medium-12 large-10 large-centered columns');
+	
+	// Create h1 header tag
+	var projTitleEle = document.createElement('h1');
+	projTitleEle.setAttribute('class', 'sectionTitleBlue');
+	var projTextNode = document.createTextNode(project[id].title);
+	projTitleEle.appendChild(projTextNode);
+	
+	// Append header to div and div to dom
+	headerDiv.appendChild(projTitleEle);
+	document.getElementById('content-page').appendChild(headerDiv);
+	
 	for (var i = 0; i < project[id].maxLength; i++) {
 		// Variables
 		var divEle = document.createElement('div');
 		divEle.setAttribute('class', 'portfolioPieceWrapper small-12 columns');
-		
+
 		// If it is the first index create the first text and the first image
 		if(i == 0) {
 			// Create div
