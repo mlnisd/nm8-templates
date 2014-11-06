@@ -63,24 +63,23 @@
         <label id='iconNavlabel2'>ABOUT</label>
       </a>
       <a class="item" href="index.html">
-        <!-- <img src="http://e08595.medialib.glogster.com/media/20/20c73be0524a63d32fcfe89b27bcbe9dbf6d2622537245f8a9d35316ee574102/nyan-cat-gif.gif">-->
-        <img src="images/NMT8_Logo.png">
+        <label id='iconNavlabel3'>NM T8</label>
       </a>
       <a class="item">
-        <label id='iconNavlabel3'>BLOG</label>
+        <label id='iconNavlabel4'>BLOG</label>
       </a>
       <a class="item">
-        <label id='iconNavlabel4'>RESUME</label>
+        <label id='iconNavlabel5'>RESUME</label>
       </a>
       </div>
       
       <!-- Dynamic Content -->
-    <div class="row" style="background-color:#ffffff;margin-top:10px">
+    <div class="row" style="background-color:#e9e9e9;margin-top:10px">
       <div id="content-page" class="small-12 columns" style="padding:0px !important">
           <!-- Portfolio Content will dynamically load content here from portfolioProjectsJSON.js -->
       </div>
     </div>
-    <div class="row" style="background-color:#ffffff;margin-top:10px">
+    <div class="row" style="background-color:#e9e9e9;margin-top:10px">
       <div class="otherProjects small-12 columns">
           <div id="other-projects" class="small-12 medium-12 large-10 large-centered columns">
               <hr/>

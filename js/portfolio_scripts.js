@@ -80,7 +80,7 @@ function addPortfolioContent(id) {
 	
 	// Create h1 header tag
 	var projTitleEle = document.createElement('h1');
-	projTitleEle.setAttribute('class', 'sectionTitleBlue');
+	projTitleEle.setAttribute('class', 'sectionTitleBlue projectTitle');
 	var projTextNode = document.createTextNode(project[id].title);
 	projTitleEle.appendChild(projTextNode);
 	
@@ -105,6 +105,9 @@ function addPortfolioContent(id) {
 			pEle.setAttribute('class', 'portfolioPieceDesc');
 			pEle.style.textAlign = 'center';
 			pEle.appendChild(pTextNode);
+			
+			// Fix Div
+			divEle.setAttribute('class', 'small-12 columns');
 			
 			// Append
 			pDiv.appendChild(pEle);

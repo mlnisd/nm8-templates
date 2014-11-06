@@ -147,6 +147,10 @@ color: #ffffff !important;
 	color:#2ba6cb !important;
 }
 
+.projectTitle{
+    padding: 20px 0;
+}
+
 .sectionTitleBlue{
     display: block;
     font-family: "Montserrat","Open Sans","HelveticaNeue-Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
