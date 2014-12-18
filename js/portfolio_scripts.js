@@ -105,6 +105,16 @@ function addPortfolioContent(id) {
 			pEle.setAttribute('class', 'portfolioPieceDesc');
 			pEle.style.textAlign = 'center';
 			pEle.appendChild(pTextNode);
+
+			//If there is a link present then we'll add it to the intro description
+			if(project[id].portfolioLink[i] != ""){
+				var linkEle = document.createElement('a');
+				var linkTextNode = document.createTextNode("Check it out");
+				linkEle.setAttribute('class','portfolioProjLink');
+				linkEle.setAttribute('href',project[id].portfolioLink);
+				linkEle.appendChild(linkTextNode);
+				pEle.appendChild(linkEle);
+			}
 			
 			// Fix Div
 			divEle.setAttribute('class', 'small-12 columns');

@@ -113,6 +113,11 @@ color: #ffffff !important;
 	color: #fff;
 }
 
+.portfolioProjLink:hover{
+	color: #258faf !important;
+	text-decoration: underline;
+}
+
 .portfolioCategory{
 	display: block;
 	font-family: "Merriweather","Bitter","Open Sans","HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;

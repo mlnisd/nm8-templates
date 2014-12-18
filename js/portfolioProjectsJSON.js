@@ -5,6 +5,7 @@ var portfolioProjects = {
 			"title"						: "Project One", // This is the title of the project and will be displayed at the top of the project page and the icon
 			"portfolioIcon" 			: "images/portfolio1.jpg", // This is the image that will be used for the icon
 			"portfolioAlt"				: "This is image 1", // This is the alternate text that will appear if the icon can't or won't load this is required of all images
+			"portfolioLink"				: "#", //This is the link to your project, leave it blank if you do not have one, or can not provide one
 			"sortTag"					: "category-1", // This is the tag that matches to a sort on the main page make sure it matches the category
 			"category"					: "Illustration", // This is the sort name that is displayed on the icon and should match the tag display name of the sortTag
 			"maxLength"					: 7, // maxLength is the length of the longest list of content, if you forget to change this and you add more content and images it won't be display
@@ -41,6 +42,7 @@ var portfolioProjects = {
 			"title"						: "Project Two",
 			"portfolioIcon" 			: "images/portfolio2.jpg",
 			"portfolioAlt"				: "This is image 2",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-2",
 			"category"					: "3D",
 			"maxLength"					: 5,
@@ -71,6 +73,7 @@ var portfolioProjects = {
 			"title"						: "Project Three",
 			"portfolioIcon" 			: "images/portfolio3.jpg",
 			"portfolioAlt"				: "This is image 3",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-3",
 			"category"					: "Animation",
 			"maxLength"					: 5,
@@ -101,6 +104,7 @@ var portfolioProjects = {
 			"title"						: "Project Four",
 			"portfolioIcon" 			: "images/portfolio4.jpg",
 			"portfolioAlt"				: "This is image 4",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-4",
 			"category"					: "Web",
 			"maxLength"					: 5,
@@ -130,6 +134,7 @@ var portfolioProjects = {
 			"title"						: "Project Five",
 			"portfolioIcon" 			: "images/portfolio5.jpg",
 			"portfolioAlt"				: "This is image 5",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-4",
 			"category"					: "Web",
 			"maxLength"					: 5,
@@ -160,6 +165,7 @@ var portfolioProjects = {
 			"title"						: "Project Six",
 			"portfolioIcon" 			: "images/portfolio6.jpg",
 			"portfolioAlt"				: "This is image 6",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-1",
 			"category"					: "Illustration",
 			"maxLength"					: 5,
@@ -190,6 +196,7 @@ var portfolioProjects = {
 			"title"						: "Project Seven",
 			"portfolioIcon" 			: "images/portfolio7.jpg",
 			"portfolioAlt"				: "This is image 7",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-2",
 			"category"					: "3D",
 			"maxLength"					: 5,
@@ -220,6 +227,7 @@ var portfolioProjects = {
 			"title"						: "Project Eight",
 			"portfolioIcon" 			: "images/portfolio8.jpg",
 			"portfolioAlt"				: "This is image 8",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-3",
 			"category"					: "Animation",
 			"maxLength"					: 5,
@@ -250,6 +258,7 @@ var portfolioProjects = {
 			"title"						: "Project Nine",
 			"portfolioIcon" 			: "images/portfolio9.jpg",
 			"portfolioAlt"				: "This is image 9",
+			"portfolioLink"				: "#",
 			"sortTag"					: "category-4",
 			"category"					: "Web",
 			"maxLength"					: 5,
