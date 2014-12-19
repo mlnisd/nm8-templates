@@ -107,7 +107,7 @@ function addPortfolioContent(id) {
 			pEle.appendChild(pTextNode);
 
 			//If there is a link present then we'll add it to the intro description
-			if(project[id].portfolioLink[i] != ""){
+			if(project[id].portfolioLink != ""){
 				var linkEle = document.createElement('a');
 				var linkTextNode = document.createTextNode("Check it out");
 				linkEle.setAttribute('class','portfolioProjLink');
